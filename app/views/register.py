@@ -48,3 +48,4 @@ def show_register_window():
             conn.close()
 
     ttk.Button(win, text="Register", command=register_user, bootstyle="success").pack(pady=10)
+# END OF PROGRAM

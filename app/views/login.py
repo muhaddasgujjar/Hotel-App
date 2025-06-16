@@ -29,7 +29,7 @@ def show_login():
         if result:
             open_dashboard(win, user)  # 👈 Pass login window to destroy
         else:
-            messagebox.showerror("Login Failed", "Invalid credentials.")
+            messagebox.showerror("Login Failed", "Invalid credentials. Renter password")
 
     ttk.Button(win, text="Login", command=validate_login, bootstyle="success").pack(pady=20)
     win.mainloop()

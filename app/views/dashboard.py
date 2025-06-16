@@ -128,7 +128,7 @@ def open_dashboard(login_window, username):
         room_type_upd.pack()
 
         Label(popup, text="Status:").pack(pady=5)
-        status_upd = Combobox(popup, values=["Available", "Occupied"])
+        status_upd = Combobox(popup, values=["Available Room", "Occupied"])
         status_upd.set(data[3])
         status_upd.pack()
 
@@ -155,11 +155,11 @@ def open_dashboard(login_window, username):
     tab4 = Frame(notebook)
     notebook.add(tab4, text="👤 Add Employee")
 
-    Label(tab4, text="Name:", font=("Segoe UI", 12)).grid(row=0, column=0, padx=20, pady=15, sticky='e')
+    Label(tab4, text="Name of Employee:", font=("Segoe UI", 12)).grid(row=0, column=0, padx=20, pady=15, sticky='e')
     emp_name = Entry(tab4, width=30)
     emp_name.grid(row=0, column=1)
 
-    Label(tab4, text="Role:", font=("Segoe UI", 12)).grid(row=1, column=0, padx=20, pady=15, sticky='e')
+    Label(tab4, text="Role of EMployee:", font=("Segoe UI", 12)).grid(row=1, column=0, padx=20, pady=15, sticky='e')
     emp_role = Entry(tab4, width=30)
     emp_role.grid(row=1, column=1)
 
@@ -207,3 +207,4 @@ def open_dashboard(login_window, username):
     load_employees()
 
     win.mainloop()
+# End of program
