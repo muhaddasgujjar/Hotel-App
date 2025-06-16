@@ -10,4 +10,4 @@ def login(username, password):
 # app/services/auth.py
 
 def check_credentials(username, password):
-    return username == "muhaddas" and password == "1234"
+    return username == "muhaddas" and password == "12345"
